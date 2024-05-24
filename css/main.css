@@ -31,7 +31,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 12% 4rem;
+    padding: 25px 12% 25px;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     justify-content: space-between;
@@ -52,7 +52,7 @@ body {
     text-shadow: 0 0 25px  var(--main-color);
 }
 .navbar a {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
@@ -65,7 +65,7 @@ body {
     border-bottom: 3px solid var(--main-color);
 }
 #menu-icon {
-    font-size: 3.6rem;
+    font-size: 16px;
     color: var(--main-color);
     display: none;
 }
@@ -92,7 +92,7 @@ section {
 }
 
 .home-content h1 {
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 700;
     margin-top:  1.5rem;
     margin-bottom: 1.5rem;
@@ -120,7 +120,7 @@ section {
 }
 
 .home-content p {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
@@ -130,8 +130,8 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: transparent;
     border: 2px solid var(--main-color);
     font-size: 2.5rem;
@@ -180,20 +180,20 @@ section {
 }
 
 .heading {
-    font-size: 8rem;
+    font-size: 50px;
     text-align: center;
-    margin: 5rem 0;
+    margin: 20px 0;
 }
 
 .project {
-    padding: 100px 15px;
+    padding: 75px 15px;
     background: var(--second-bg-color);
 }
 .project h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 20px;
 }
 .timeline-items {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -260,9 +260,23 @@ section {
 }
 .timeline-content p {
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 22px;
+}
+.timeline-content .arrow {
+    font-size: 36px;
+    color: var(--main-color);
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
 }
 
 ::-webkit-scrollbar {
@@ -278,9 +292,10 @@ section {
 .about {
     background: var(--bg-color);
     color: black;
+    padding-top: 75px;
 }
 .about h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 20px;
     color: white;
 }
 .about-container {
@@ -291,15 +306,15 @@ section {
 }
 .about-box {
     background-color: var(--main-color);
-    height: 300px;
+    height: 200px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4 ease-in-out;
 }
 .about-box:hover {
-    background: var(--text-color);
-    color: black;
+    background: var(--bg-color);
+    color: var(--text-color);
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
@@ -310,19 +325,19 @@ section {
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 5rem 5rem;
+    padding: 20px 24px;
 }
 .about-info h4 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 800;
     line-height: 2;
 }
 .about-info p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     max-height: 100px;
     line-height: 1.7;
-    margin: auto;
+    margin: 0;
 }
 
 .footer {

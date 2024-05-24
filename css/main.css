@@ -97,7 +97,12 @@ section {
     margin-top:  1.5rem;
     margin-bottom: 1.5rem;
     line-height: 1;
+    color: var(--text-color);
 }
+.home-content h1 span {
+    color: var(--main-color);
+}
+
 
 .home-img {
     border-radius: 50%;
@@ -110,7 +115,7 @@ section {
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
-    transition: 0.4 ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .home-img img:hover {
@@ -395,4 +400,100 @@ section {
     text-align: center;
     font-size: 16px;
     color: var(--text-color);
+}
+
+@media (max-width: 1285px) {
+    html {
+        font-size: 55%;
+    }
+    .about-container {
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 2rem 3%;
+    }
+    #menu-icon {
+        margin: auto;
+        margin-right: 0px;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .timeline-items::before {
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(even),
+    .timeline-item:nth-child(odd) {
+        padding-left: 37px;
+    }
+    .timeline-dot {
+        left: 0;
+    }
+    .about {
+        padding-bottom: 7rem;
+    }
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+@media (max-width: 895px) {
+    #menu-icon {
+        display: block;
+        font-size: 28px;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 16px;
+        margin: 3rem 0;
+        color: var(--text-color);
+    }
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+    .home-content h3 {
+        font-size: 16px;
+    }
+    .home-content h1 {
+        font-size: 40px;
+        margin-top: 3rem;
+    }
+    .home-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .home-img img {
+        width: 300px;
+    }
+    .about h2 {
+        margin-bottom: 3rem;
+    }
+    .about-container {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
